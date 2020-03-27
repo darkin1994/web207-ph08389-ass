@@ -1,0 +1,16 @@
+<div class="what pb-5" id="what">
+  <div class="container py-xl-5 py-lg-3">
+    <h3 class="title-w3 text-bl text-center font-weight-bold mb-sm-5 mb-4">Product Detail </h3>
+
+
+    <div class="col-lg-3 col-md-6 col-sm-6" *ngIf="product">
+      <div class="bottom-gd">
+        <h4>ID :{{product.id}}</h4>
+        <img src="https://raw.githubusercontent.com/darkin1994/web207-ass/master/src/assets/images/wh1.jpg" alt="" class="img-fluid">
+        <h3 class="my-3 font-weight-bold"><a routerLink="/Detail/{{product.id}}">{{product.name}}</a></h3>
+        <p>${{product.price}}</p>
+      </div>
+    </div>
+
+
+  </div>
